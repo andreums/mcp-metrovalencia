@@ -1,0 +1,1381 @@
+[
+  {
+    "id": 20,
+    "nombre": "València Sud",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 78,
+    "nombre": "Sant Isidre",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 21,
+    "nombre": "Safranar",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 22,
+    "nombre": "Patraix",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 23,
+    "nombre": "Jesús",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 24,
+    "nombre": "Pl. Espanya",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 25,
+    "nombre": "Àngel Guimerà",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 26,
+    "nombre": "Túria",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 27,
+    "nombre": "Campanar",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 28,
+    "nombre": "Beniferri",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 29,
+    "nombre": "Empalme",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 30,
+    "nombre": "Burjassot",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 31,
+    "nombre": "Burjassot - Godella",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 32,
+    "nombre": "Godella",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 33,
+    "nombre": "Rocafort",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 34,
+    "nombre": "Massarrojos",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 35,
+    "nombre": "Moncada - Alfara",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 36,
+    "nombre": "Seminari - CEU",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 37,
+    "nombre": "Masies",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 38,
+    "nombre": "Horta Vella",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 39,
+    "nombre": "Bétera",
+    "lineas": [
+      "Línea 1"
+    ]
+  },
+  {
+    "id": 20,
+    "nombre": "València Sud",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 78,
+    "nombre": "Sant Isidre",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 21,
+    "nombre": "Safranar",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 22,
+    "nombre": "Patraix",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 23,
+    "nombre": "Jesús",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 24,
+    "nombre": "Pl. Espanya",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 25,
+    "nombre": "Àngel Guimerà",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 26,
+    "nombre": "Túria",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 27,
+    "nombre": "Campanar",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 28,
+    "nombre": "Beniferri",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 29,
+    "nombre": "Empalme",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 40,
+    "nombre": "Cantereria",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 41,
+    "nombre": "Benimàmet",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 42,
+    "nombre": "Les Carolines - Fira",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 43,
+    "nombre": "Campament",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 44,
+    "nombre": "Paterna",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 77,
+    "nombre": "Santa Rita",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 45,
+    "nombre": "Fuente del Jarro",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 198,
+    "nombre": "Font del Barranc",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 46,
+    "nombre": "La Canyada",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 47,
+    "nombre": "La Vallesa",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 65,
+    "nombre": "Entrepins",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 48,
+    "nombre": "El Clot",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 49,
+    "nombre": "Montesol",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 50,
+    "nombre": "L'Eliana",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 119,
+    "nombre": "Gallipont - Torre del Virrei",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 51,
+    "nombre": "La Pobla de Vallbona",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 52,
+    "nombre": "Fondo de Benaguasil",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 53,
+    "nombre": "Benaguasil",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 54,
+    "nombre": "Llíria",
+    "lineas": [
+      "Línea 2"
+    ]
+  },
+  {
+    "id": 182,
+    "nombre": "Aeroport",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 181,
+    "nombre": "Roses",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 180,
+    "nombre": "Manises",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 179,
+    "nombre": "Salt de l'Aigua",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 178,
+    "nombre": "Quart de Poblet",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 177,
+    "nombre": "Faitanar",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 76,
+    "nombre": "Mislata Almassil",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 75,
+    "nombre": "Mislata",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 74,
+    "nombre": "Nou d'Octubre",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 73,
+    "nombre": "Av. del Cid",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 25,
+    "nombre": "Àngel Guimerà",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 71,
+    "nombre": "Xàtiva",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 70,
+    "nombre": "Colón",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 69,
+    "nombre": "Alameda",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 68,
+    "nombre": "Facultats - Manuel Broseta",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 67,
+    "nombre": "Benimaclet",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 66,
+    "nombre": "Machado",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 79,
+    "nombre": "Alboraia Palmaret",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 56,
+    "nombre": "Alboraia Peris Aragó",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 57,
+    "nombre": "Almàssera",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 58,
+    "nombre": "Meliana",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 59,
+    "nombre": "Foios",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 60,
+    "nombre": "Albalat dels Sorells",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 61,
+    "nombre": "Museros",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 62,
+    "nombre": "Massamagrell",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 63,
+    "nombre": "La Pobla de Farnals",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 64,
+    "nombre": "Rafelbunyol",
+    "lineas": [
+      "Línea 3"
+    ]
+  },
+  {
+    "id": 98,
+    "nombre": "Dr. Lluch",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 97,
+    "nombre": "Platja les Arenes",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 99,
+    "nombre": "Cabanyal",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 96,
+    "nombre": "Platja Malva-rosa",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 95,
+    "nombre": "La Cadena",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 94,
+    "nombre": "Beteró",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 93,
+    "nombre": "Tarongers - Ernest Lluch",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 92,
+    "nombre": "La Carrasca",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 91,
+    "nombre": "Universitat Politècnica",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 90,
+    "nombre": "Vicente Zaragozá",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 67,
+    "nombre": "Benimaclet",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 88,
+    "nombre": "Trinitat",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 87,
+    "nombre": "Pont de Fusta",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 86,
+    "nombre": "Sagunt",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 85,
+    "nombre": "Reus",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 84,
+    "nombre": "Marxalenes",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 83,
+    "nombre": "Trànsits",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 82,
+    "nombre": "Benicalap",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 81,
+    "nombre": "Garbí",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 80,
+    "nombre": "Florista",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 55,
+    "nombre": "Palau de Congressos",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 29,
+    "nombre": "Empalme",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 105,
+    "nombre": "La Granja",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 104,
+    "nombre": "Sant Joan",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 103,
+    "nombre": "Campus",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 102,
+    "nombre": "Vicent Andrés Estellés",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 110,
+    "nombre": "À Punt",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 100,
+    "nombre": "Fira València",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 115,
+    "nombre": "Ll. Llarga - Terramelar",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 111,
+    "nombre": "Parc Científic",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 112,
+    "nombre": "Tomás y Valiente",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 113,
+    "nombre": "La Coma",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 114,
+    "nombre": "Mas del Rosari",
+    "lineas": [
+      "Línea 4"
+    ]
+  },
+  {
+    "id": 182,
+    "nombre": "Aeroport",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 181,
+    "nombre": "Roses",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 180,
+    "nombre": "Manises",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 179,
+    "nombre": "Salt de l'Aigua",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 178,
+    "nombre": "Quart de Poblet",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 177,
+    "nombre": "Faitanar",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 76,
+    "nombre": "Mislata Almassil",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 75,
+    "nombre": "Mislata",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 74,
+    "nombre": "Nou d'Octubre",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 73,
+    "nombre": "Av. del Cid",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 25,
+    "nombre": "Àngel Guimerà",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 71,
+    "nombre": "Xàtiva",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 70,
+    "nombre": "Colón",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 69,
+    "nombre": "Alameda",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 120,
+    "nombre": "Aragó",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 121,
+    "nombre": "Amistat",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 122,
+    "nombre": "Ayora",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 123,
+    "nombre": "Marítim",
+    "lineas": [
+      "Línea 5"
+    ]
+  },
+  {
+    "id": 123,
+    "nombre": "Marítim",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 124,
+    "nombre": "Francesc Cubells",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 125,
+    "nombre": "Grau - La Marina",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 127,
+    "nombre": "Canyamelar",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 98,
+    "nombre": "Dr. Lluch",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 99,
+    "nombre": "Cabanyal",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 97,
+    "nombre": "Platja les Arenes",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 96,
+    "nombre": "Platja Malva-rosa",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 95,
+    "nombre": "La Cadena",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 94,
+    "nombre": "Beteró",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 93,
+    "nombre": "Tarongers - Ernest Lluch",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 92,
+    "nombre": "La Carrasca",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 91,
+    "nombre": "Universitat Politècnica",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 90,
+    "nombre": "Vicente Zaragozá",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 67,
+    "nombre": "Benimaclet",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 88,
+    "nombre": "Trinitat",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 128,
+    "nombre": "Alfauir",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 129,
+    "nombre": "Orriols",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 130,
+    "nombre": "Estadi Ciutat de València",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 131,
+    "nombre": "Sant Miquel dels Reis",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 132,
+    "nombre": "Tossal del Rei",
+    "lineas": [
+      "Línea 6"
+    ]
+  },
+  {
+    "id": 20,
+    "nombre": "València Sud",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 78,
+    "nombre": "Sant Isidre",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 21,
+    "nombre": "Safranar",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 22,
+    "nombre": "Patraix",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 23,
+    "nombre": "Jesús",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 108,
+    "nombre": "Bailén",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 70,
+    "nombre": "Colón",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 69,
+    "nombre": "Alameda",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 120,
+    "nombre": "Aragó",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 121,
+    "nombre": "Amistat",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 122,
+    "nombre": "Ayora",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 123,
+    "nombre": "Marítim",
+    "lineas": [
+      "Línea 7"
+    ]
+  },
+  {
+    "id": 123,
+    "nombre": "Marítim",
+    "lineas": [
+      "Línea 8"
+    ]
+  },
+  {
+    "id": 124,
+    "nombre": "Francesc Cubells",
+    "lineas": [
+      "Línea 8"
+    ]
+  },
+  {
+    "id": 125,
+    "nombre": "Grau - La Marina",
+    "lineas": [
+      "Línea 8"
+    ]
+  },
+  {
+    "id": 126,
+    "nombre": "Neptú",
+    "lineas": [
+      "Línea 8"
+    ]
+  },
+  {
+    "id": 186,
+    "nombre": "Riba-roja de Túria",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 185,
+    "nombre": "Masia de Traver",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 188,
+    "nombre": "València la Vella",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 184,
+    "nombre": "La Presa",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 183,
+    "nombre": "La Cova",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 181,
+    "nombre": "Roses",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 180,
+    "nombre": "Manises",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 179,
+    "nombre": "Salt de l'Aigua",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 178,
+    "nombre": "Quart de Poblet",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 177,
+    "nombre": "Faitanar",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 76,
+    "nombre": "Mislata Almassil",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 75,
+    "nombre": "Mislata",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 74,
+    "nombre": "Nou d'Octubre",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 73,
+    "nombre": "Av. del Cid",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 25,
+    "nombre": "Àngel Guimerà",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 71,
+    "nombre": "Xàtiva",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 70,
+    "nombre": "Colón",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 69,
+    "nombre": "Alameda",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 68,
+    "nombre": "Facultats - Manuel Broseta",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 67,
+    "nombre": "Benimaclet",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 66,
+    "nombre": "Machado",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 79,
+    "nombre": "Alboraia Palmaret",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 56,
+    "nombre": "Alboraia Peris Aragó",
+    "lineas": [
+      "Línea 9"
+    ]
+  },
+  {
+    "id": 190,
+    "nombre": "Alacant",
+    "lineas": [
+      "Línea 10"
+    ]
+  },
+  {
+    "id": 191,
+    "nombre": "Russafa",
+    "lineas": [
+      "Línea 10"
+    ]
+  },
+  {
+    "id": 192,
+    "nombre": "Amado Granell - Montolivet",
+    "lineas": [
+      "Línea 10"
+    ]
+  },
+  {
+    "id": 193,
+    "nombre": "Quatre Carreres",
+    "lineas": [
+      "Línea 10"
+    ]
+  },
+  {
+    "id": 194,
+    "nombre": "Ciutat Arts i Ciències - Justícia",
+    "lineas": [
+      "Línea 10"
+    ]
+  },
+  {
+    "id": 195,
+    "nombre": "Oceanogràfic",
+    "lineas": [
+      "Línea 10"
+    ]
+  },
+  {
+    "id": 196,
+    "nombre": "Moreres",
+    "lineas": [
+      "Línea 10"
+    ]
+  },
+  {
+    "id": 197,
+    "nombre": "Natzaret",
+    "lineas": [
+      "Línea 10"
+    ]
+  }
+]

@@ -1,0 +1,107 @@
+openapi: 3.0.1
+info:
+  title: Metrovalencia MCP API
+  description: API que permite consultar rutas, estaciones y horarios de Metrovalencia siguiendo el protocolo Model Context Protocol (MCP).
+  version: "1.0.0"
+servers:
+  - url: http://localhost:3000
+paths:
+  /arrival:
+    get:
+      summary: Obtener horarios de llegada en una estación
+      parameters:
+        - in: query
+          name: stationId
+          schema:
+            type: integer
+          required: false
+          description: ID numérico de la estación
+        - in: query
+          name: name
+          schema:
+            type: string
+          required: false
+          description: Nombre de la estación
+      responses:
+        '200':
+          description: Lista de horarios para la estación
+        '400':
+          description: Parámetros inválidos
+        '404':
+          description: Estación no encontrada
+  /lines:
+    get:
+      summary: Obtener estaciones agrupadas por línea
+      responses:
+        '200':
+          description: Estaciones agrupadas por línea
+  /station:
+    get:
+      summary: Buscar estación por nombre
+      parameters:
+        - in: query
+          name: name
+          schema:
+            type: string
+          required: true
+          description: Nombre de la estación
+      responses:
+        '200':
+          description: Datos de la estación
+        '400':
+          description: Falta el parámetro
+        '404':
+          description: Estación no encontrada
+  /station/{id}:
+    get:
+      summary: Obtener estación por ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Datos de la estación
+        '404':
+          description: Estación no encontrada
+  /route:
+    get:
+      summary: Consultar trayecto entre dos estaciones
+      parameters:
+        - in: query
+          name: from
+          schema:
+            type: integer
+          required: true
+          description: ID de estación de origen
+        - in: query
+          name: to
+          schema:
+            type: integer
+          required: true
+          description: ID de estación de destino
+        - in: query
+          name: date
+          schema:
+            type: string
+            format: date
+          required: false
+          description: Fecha deseada en formato YYYY-MM-DD
+        - in: query
+          name: time
+          schema:
+            type: string
+            pattern: '^\\d{2}:\\d{2}$'
+          required: false
+          description: Hora deseada en formato HH:MM
+      responses:
+        '200':
+          description: Rutas disponibles
+        '400':
+          description: Parámetros inválidos
+        '404':
+          description: Rutas no encontradas
+        '500':
+          description: Error interno al consultar Metrovalencia

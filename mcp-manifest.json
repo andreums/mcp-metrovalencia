@@ -1,0 +1,29 @@
+{
+    "schema_version": "v1",
+    "name": "Metrovalencia MCP API",
+    "description": "Un servicio MCP que proporciona horarios y rutas de Metrovalencia. Permite consultar llegadas por estación, estaciones por línea, y planificar rutas entre estaciones con o sin transbordos.",
+    "api": {
+      "type": "openapi",
+      "url": "http://localhost:3000/openapi.yaml"
+    },
+    "auth": {
+      "type": "none"
+    },
+    "contact": {
+      "name": "Andrés Martínez Soto",
+      "email": "andresmartinezsoto@gmail.com",
+      "url": "https://andresmartinez.dev"
+    },
+    "legal": {
+      "terms_of_service_url": "http://localhost:3000/legal",
+      "privacy_policy_url": "http://localhost:3000/legal"
+    },
+    "logo_url": "http://localhost:3000/logo.png",
+    "tags": ["transport", "valencia", "metro", "horarios", "rutas"],
+    "contextual_info": {
+      "provider": "Metrovalencia",
+      "region": "Valencia, España",
+      "language": ["es", "ca"]
+    }
+  }
+  

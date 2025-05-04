@@ -112,6 +112,34 @@ app.get('/route', async (req, res) => {
   }
 });
 
+// Endpoint para enviar eventos SSE (Server-Sent Events)
+app.get('/events', (req, res) => {
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+  res.flushHeaders(); // Envía los encabezados de respuesta inmediatamente
+
+  // Simula el envío de eventos SSE con un intervalo
+  const intervalId = setInterval(() => {
+    const message = {
+      time: new Date().toISOString(),
+      data: 'Nuevo evento de tren',
+      linea: "Línea 1",
+      destino: "València Sud",
+      minutos: "5 min"
+    };
+
+    res.write(`data: ${JSON.stringify(message)}\n\n`);
+  }, 5000); // Envía un evento cada 5 segundos
+
+  // Cerrar la conexión cuando el cliente se desconecte
+  req.on('close', () => {
+    clearInterval(intervalId);
+    console.log('Conexión SSE cerrada');
+  });
+});
+
+
 // Página raíz
 app.get('/', (req, res) => {
   res.send(`

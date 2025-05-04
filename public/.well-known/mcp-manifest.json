@@ -1,29 +1,63 @@
 {
-    "schema_version": "v1",
-    "name": "Metrovalencia MCP API",
-    "description": "Un servicio MCP que proporciona horarios y rutas de Metrovalencia. Permite consultar llegadas por estación, estaciones por línea, y planificar rutas entre estaciones con o sin transbordos.",
-    "api": {
-      "type": "openapi",
-      "url": "http://localhost:3000/openapi.yaml"
-    },
-    "auth": {
-      "type": "none"
-    },
-    "contact": {
-      "name": "Andrés Martínez Soto",
-      "email": "andresmartinezsoto@gmail.com",
-      "url": "https://andresmartinez.dev"
-    },
-    "legal": {
-      "terms_of_service_url": "http://localhost:3000/legal",
-      "privacy_policy_url": "http://localhost:3000/legal"
-    },
-    "logo_url": "http://localhost:3000/logo.png",
-    "tags": ["transport", "valencia", "metro", "horarios", "rutas"],
-    "contextual_info": {
-      "provider": "Metrovalencia",
-      "region": "Valencia, España",
-      "language": ["es", "ca"]
+  "mcpServers": {
+    "metrovalencia_mcp": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-metrovalencia"],
+      "env": {
+        "MCP_API_KEY": "your-api-key"
+      },
+      "endpoints": [
+        {
+          "method": "GET",
+          "path": "/arrival",
+          "description": "Recibe los horarios de llegada para una estación específica.",
+          "params": [
+            {
+              "name": "stationId",
+              "type": "integer",
+              "required": true,
+              "description": "ID de la estación"
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "required": false,
+              "description": "Nombre de la estación"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/route",
+          "description": "Obtiene las rutas entre dos estaciones.",
+          "params": [
+            {
+              "name": "from",
+              "type": "integer",
+              "required": true,
+              "description": "ID de la estación de origen"
+            },
+            {
+              "name": "to",
+              "type": "integer",
+              "required": true,
+              "description": "ID de la estación de destino"
+            },
+            {
+              "name": "date",
+              "type": "string",
+              "required": false,
+              "description": "Fecha de la consulta en formato YYYY-MM-DD"
+            },
+            {
+              "name": "time",
+              "type": "string",
+              "required": false,
+              "description": "Hora de la consulta en formato HH:MM"
+            }
+          ]
+        }
+      ]
     }
   }
-  
+}

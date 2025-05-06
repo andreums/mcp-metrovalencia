@@ -117,6 +117,8 @@ app.post('/', async (req, res) => {
       jsonrpc: "2.0",
       id,
       result: {
+        protocolVersion: "2024-11-05",   // ✅ string obligatorio
+        capabilities: {},                // ✅ objeto obligatorio
         serverInfo: {
           name: "mcp-metrovalencia",
           version: "1.0.0"

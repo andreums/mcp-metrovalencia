@@ -185,7 +185,7 @@ app.post('/', async (req, res) => {
 
       const data = await getStationScheduleParsed(station.id);
 
-      if (!data || !data.arrivals || !Array.isArray(data.arrivals)) {
+      if (!data  || !Array.isArray(data)) {
         return res.status(404).json({
           jsonrpc: "2.0",
           id,
@@ -198,7 +198,7 @@ app.post('/', async (req, res) => {
         });
       }
 
-      const trains = data.arrivals.map(t => ({
+      const trains = data.map(t => ({
         linea: t.linea,
         destino: t.destino,
         minutos: t.minutos

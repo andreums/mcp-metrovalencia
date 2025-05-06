@@ -166,27 +166,57 @@ app.post('/', async (req, res) => {
   if (method === 'getNextTrains') {
     const name = params?.station;
     if (!name) {
-      return res.status(400).json({ jsonrpc: "2.0", id, error: { code: -32602, message: "Falta parámetro 'station'" } });
+      return res.status(400).json({
+        jsonrpc: "2.0",
+        id,
+        error: { code: -32602, message: "Falta parámetro 'station'" }
+      });
     }
 
     try {
       const station = await findStationByName(name);
       if (!station) {
-        return res.status(404).json({ jsonrpc: "2.0", id, error: { code: -32000, message: "Estación no encontrada" } });
+        return res.status(404).json({
+          jsonrpc: "2.0",
+          id,
+          error: { code: -32000, message: "Estación no encontrada" }
+        });
       }
 
       const data = await getStationScheduleParsed(station.id);
+
+      if (!data || !data.arrivals || !Array.isArray(data.arrivals)) {
+        return res.status(404).json({
+          jsonrpc: "2.0",
+          id,
+          error: {
+            code: -32001,
+            message: "No se encontraron datos de llegada para esta estación"
+          }
+        });
+      }
+
       const trains = data.arrivals.map(t => ({
         linea: t.linea,
         destino: t.destino,
         minutos: t.minutos
       }));
 
-      return res.json({ jsonrpc: "2.0", id, result: { trains } });
+      return res.json({
+        jsonrpc: "2.0",
+        id,
+        result: { trains }
+      });
     } catch (error) {
-      return res.status(500).json({ jsonrpc: "2.0", id, error: { code: -32001, message: error.message } });
+      return res.status(500).json({
+        jsonrpc: "2.0",
+        id,
+        error: { code: -32001, message: error.message }
+      });
     }
   }
+
+
 
   return res.status(404).json({
     jsonrpc: "2.0",

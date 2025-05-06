@@ -117,8 +117,8 @@ app.post('/', async (req, res) => {
       jsonrpc: "2.0",
       id,
       result: {
-        protocolVersion: "2024-11-05",   // ✅ string obligatorio
-        capabilities: {},                // ✅ objeto obligatorio
+        protocolVersion: "2024-11-05",
+        capabilities: {},
         serverInfo: {
           name: "mcp-metrovalencia",
           version: "1.0.0"
@@ -152,6 +152,14 @@ app.post('/', async (req, res) => {
           }
         }
       }
+    });
+  }
+
+  if (method === 'notifications/initialized') {
+    return res.json({
+      jsonrpc: "2.0",
+      id,
+      result: null
     });
   }
 

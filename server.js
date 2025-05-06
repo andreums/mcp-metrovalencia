@@ -191,7 +191,8 @@ app.post('/', async (req, res) => {
           id,
           error: {
             code: -32001,
-            message: "No se encontraron datos de llegada para esta estación"
+            message: "No se encontraron datos de llegada para esta estación",
+            "dataSent": station
           }
         });
       }

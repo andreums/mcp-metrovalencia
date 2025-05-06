@@ -7,9 +7,7 @@ import { getPlanner } from './planner.js';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// ────────────────────────────────
-// Middleware global
-// ────────────────────────────────
+// ──────────────── Middleware ────────────────
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -18,13 +16,11 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  res.setHeader('MCP', '1'); // Marca este servidor como compatible con Model Context Protocol
+  res.setHeader('MCP', '1'); // Marca este servidor como compatible con MCP
   next();
 });
 
-// ────────────────────────────────
-// ENDPOINTS DE API REST
-// ────────────────────────────────
+// ──────────────── REST Endpoints ────────────────
 app.get('/arrival', async (req, res) => {
   let stationId = parseInt(req.query.stationId);
   const name = req.query.name;
@@ -106,9 +102,7 @@ app.get('/route', async (req, res) => {
   }
 });
 
-// ────────────────────────────────
-// ENDPOINT COMPATIBLE CON MCP: POST /
-// ────────────────────────────────
+// ──────────────── MCP JSON-RPC Endpoint ────────────────
 app.post('/', async (req, res) => {
   const { id, method, params } = req.body;
 
@@ -155,14 +149,6 @@ app.post('/', async (req, res) => {
     });
   }
 
-  if (method === 'notifications/initialized') {
-    return res.json({
-      jsonrpc: "2.0",
-      id,
-      result: null
-    });
-  }
-
   if (method === 'getNextTrains') {
     const name = params?.station;
     if (!name) {
@@ -184,19 +170,7 @@ app.post('/', async (req, res) => {
       }
 
       const data = await getStationScheduleParsed(station.id);
-
-      if (!data  || !Array.isArray(data)) {
-        return res.status(404).json({
-          jsonrpc: "2.0",
-          id,
-          error: {
-            code: -32001,
-            message: "No se encontraron datos de llegada para esta estación",
-            "dataSent": station,
-            "dataReceived": data
-          }
-        });
-      }
+      if (!data) throw new Error('No se pudo recuperar el horario');
 
       const trains = data.map(t => ({
         linea: t.linea,
@@ -204,11 +178,7 @@ app.post('/', async (req, res) => {
         minutos: t.minutos
       }));
 
-      return res.json({
-        jsonrpc: "2.0",
-        id,
-        result: { trains }
-      });
+      return res.json({ jsonrpc: "2.0", id, result: { trains } });
     } catch (error) {
       return res.status(500).json({
         jsonrpc: "2.0",
@@ -218,8 +188,6 @@ app.post('/', async (req, res) => {
     }
   }
 
-
-
   return res.status(404).json({
     jsonrpc: "2.0",
     id,
@@ -227,9 +195,7 @@ app.post('/', async (req, res) => {
   });
 });
 
-// ────────────────────────────────
-// GET / - HTML o SSE (Opción A)
-// ────────────────────────────────
+// ──────────────── Página HTML + SSE ────────────────
 app.get('/', (req, res) => {
   if (req.headers.accept === 'text/event-stream') {
     res.setHeader('Content-Type', 'text/event-stream');
@@ -257,24 +223,22 @@ app.get('/', (req, res) => {
     return;
   }
 
-  // Página HTML normal
+  // Página HTML simple
   res.send(`
     <h1>🚇 API de Metrovalencia (compatible MCP)</h1>
     <p>Endpoints disponibles:</p>
     <ul>
-      <li><code>/arrival?stationId=1</code> – Horarios en una estación</li>
-      <li><code>/station?name=Empalme</code> – Buscar estación por nombre</li>
-      <li><code>/station/:id</code> – Buscar estación por ID</li>
-      <li><code>/lines</code> – Estaciones agrupadas por línea</li>
-      <li><code>/route?from=20&to=112&date=2025-05-04&time=20:30</code> – Rutas planificadas entre estaciones</li>
+      <li><code>/arrival?stationId=1</code></li>
+      <li><code>/station?name=Empalme</code></li>
+      <li><code>/station/:id</code></li>
+      <li><code>/lines</code></li>
+      <li><code>/route?from=20&to=112&date=2025-05-04&time=20:30</code></li>
     </ul>
-    <p><strong>Este servidor responde con <code>MCP: 1</code> y acepta SSE en <code>/</code>.</strong></p>
+    <p><strong>Este servidor responde con cabecera <code>MCP: 1</code> y acepta conexiones SSE en <code>/</code>.</strong></p>
   `);
 });
 
-// ────────────────────────────────
-// Errores globales y arranque
-// ────────────────────────────────
+// ──────────────── Fallbacks y errores ────────────────
 app.use((req, res) => {
   res.status(404).send('❌ Endpoint no encontrado');
 });

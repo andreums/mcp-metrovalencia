@@ -156,6 +156,96 @@ app.get('/', (req, res) => {
   `);
 });
 
+
+// MCP: Handler JSON-RPC para el endpoint raíz "/"
+app.post('/', async (req, res) => {
+  const body = req.body;
+  const { id, method, params } = body;
+
+  if (method === 'initialize') {
+    return res.json({
+      jsonrpc: "2.0",
+      id,
+      result: {
+        serverInfo: {
+          name: "mcp-metrovalencia",
+          version: "1.0.0"
+        },
+        methods: {
+          getNextTrains: {
+            description: "Devuelve los próximos trenes de una estación",
+            params: {
+              type: "object",
+              properties: {
+                station: { type: "string" }
+              },
+              required: ["station"]
+            },
+            returns: {
+              type: "object",
+              properties: {
+                trains: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      linea: { type: "string" },
+                      destino: { type: "string" },
+                      minutos: { type: "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+
+  // MCP: Método getNextTrains
+  if (method === 'getNextTrains') {
+    const name = params?.station;
+    if (!name) {
+      return res.status(400).json({ jsonrpc: "2.0", id, error: { code: -32602, message: "Falta parámetro 'station'" } });
+    }
+
+    try {
+      const station = await findStationByName(name);
+      if (!station) {
+        return res.status(404).json({ jsonrpc: "2.0", id, error: { code: -32000, message: "Estación no encontrada" } });
+      }
+
+      const data = await getStationScheduleParsed(station.id);
+
+      const trains = data.arrivals.map(t => ({
+        linea: t.linea,
+        destino: t.destino,
+        minutos: t.minutos
+      }));
+
+      return res.json({
+        jsonrpc: "2.0",
+        id,
+        result: { trains }
+      });
+    } catch (error) {
+      return res.status(500).json({ jsonrpc: "2.0", id, error: { code: -32001, message: error.message } });
+    }
+  }
+
+  // Si el método no está soportado
+  return res.status(404).json({
+    jsonrpc: "2.0",
+    id,
+    error: {
+      code: -32601,
+      message: `Método '${method}' no implementado`
+    }
+  });
+});
+
+
 // Fallbacks
 app.use((req, res) => {
   res.status(404).send('❌ Endpoint no encontrado');
